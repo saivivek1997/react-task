@@ -13,7 +13,7 @@ function Search({ onChange, searchInput }) {
         value={searchInput}
         onChange={onChange}
         placeholder="Search"
-        className="bg-white rounded-lg w-full  min-h-[45px] border border-beige-500 border-solid  placeholder:border-beige-500 text-[14px] pl-5 placeholder:pl-2"
+        className="bg-white rounded-lg w-full  min-h-8 border border-beige-500 border-solid  placeholder:border-beige-500 text-[14px] pl-8 placeholder:pl-3"
       />
     </div>
   );

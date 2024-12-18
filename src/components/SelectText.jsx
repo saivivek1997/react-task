@@ -8,7 +8,7 @@ import {
 function SelectText({ placeholder }) {
   return (
     <Select>
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className="w-[180px] max-h-8">
         <SelectValue placeholder={placeholder} />
       </SelectTrigger>
       <SelectContent>

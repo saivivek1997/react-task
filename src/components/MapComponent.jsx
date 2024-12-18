@@ -1,6 +1,6 @@
 const MapComponent = () => {
   return (
-    <div className="bg-red-500">
+    <div>
       <iframe
         title="Static Google Map"
         style={{ width: "100%", height: "350px" }}

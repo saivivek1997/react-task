@@ -93,7 +93,7 @@ function StayCard() {
             <p className="text-fg-primary text-xs">{heading}</p>
             <div className="flex gap-2 items-center">
               <StarRating rating={rating} />
-              <p className="text-fg-primary">{rating}</p>
+              <p className="text-fg-primary text-sm">{rating}</p>
               <p className="text-teritary flex gap-1 text-sm">
                 {reviews}
                 <span>reviews</span>
@@ -119,7 +119,7 @@ function StayCard() {
 
           <div className="ml-auto flex flex-col justify-between items-center">
             <div className="shadow-sm h-7 w-7 rounded-md border border-[##6941C6] p-2 flex items-center justify-center">
-              <div className="border-[#6941C6] border  h-3 w-3 rounded-full"></div>
+              <div className="border-[#6941C6] border-[1.5px]  h-3 w-3 rounded-full font-bold"></div>
             </div>
 
             <div>

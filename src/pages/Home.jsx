@@ -5,6 +5,9 @@ import { ListFilter, MapPin, SquareMenu, Star } from "lucide-react";
 import SelectText from "../components/SelectText";
 import Search from "../components/ui/Search";
 import MapComponent from "../components/MapComponent";
+import CountryIcon from "../assets/AU.svg";
+import CalenderIcon from "../assets/calendar.svg";
+import CurrencyIcon from "../assets/currency-dollar.svg";
 
 function Home() {
   return (
@@ -22,7 +25,7 @@ function Home() {
           </div>
 
           <div className="flex gap-3 ">
-            <Button className="text-black border border-[#D5D7DA] text-xs min-w-14">
+            <Button className="text-black border border-[#D5D7DA] text-xs min-w-14 rounded-lg">
               Share
             </Button>
             <Button className="text-white bg-[#7F56D9]  text-xs flex gap-2 items-center ">
@@ -34,9 +37,30 @@ function Home() {
         {/* ==================================== */}
         <div className="flex justify-between">
           <div className="flex gap-2">
-            <SelectText placeholder="Melbourne Au" />
-            <SelectText placeholder="jan6-jan13" />
-            <SelectText placeholder="Any Price" />
+            <SelectText
+              placeholder={
+                <div className="flex gap-2 items-center">
+                  <img src={CountryIcon} className="h-4 w-4" />
+                  <p className="text-xs">Melbourne </p>{" "}
+                </div>
+              }
+            />
+            <SelectText
+              placeholder={
+                <div className="flex gap-2 items-center">
+                  <img src={CalenderIcon} className="h-4 w-4" />
+                  <p className="text-xs">jan6-jan13 </p>{" "}
+                </div>
+              }
+            />
+            <SelectText
+              placeholder={
+                <div className="flex gap-2 items-center">
+                  <img src={CurrencyIcon} className="h-4 w-4" />
+                  <p className="text-xs">Any Price </p>{" "}
+                </div>
+              }
+            />
           </div>
           <div>
             <Button className="flex gap-2 items-center border border-bline  min-w-14">
@@ -68,19 +92,19 @@ function Home() {
         {/* ==================================== */}
         <div className="flex justify-between">
           <div className="flex gap-0">
-            <Button className="border border-[#D5D7DA] text-xs font-[600]  bg-[ #FAFAFA]">
+            <Button className="border border-[#D5D7DA] text-xs font-[600]  bg-[ #FAFAFA] rounded-r-none">
               Sort by date
             </Button>
-            <Button className="border border-[#D5D7DA] text-xs font-[500]">
+            <Button className="border border-[#D5D7DA] text-xs font-[500] rounded-l-none">
               Sort by price
             </Button>
           </div>
 
           <div className="flex">
-            <Button className="border border-[#D5D7DA]   p-1  bg-[ #FAFAFA] min-w-10 justify-center flex items-center">
-              <SquareMenu className="text-brand-secondary h-4 w-4 " />
+            <Button className="border border-[#D5D7DA]   p-1  bg-[ #FAFAFA] min-w-10 justify-center flex items-center rounded-r-none">
+              <SquareMenu className="text-brand-secondary h-4 w-4  rounded-r-none" />
             </Button>
-            <Button className="border border-[#D5D7DA]  p-1 w-2 min-w-10 flex justify-center items-center">
+            <Button className="border border-[#D5D7DA]  p-1 w-2 min-w-10 flex justify-center items-center  rounded-l-none">
               <MapPin className="h-4 w-4" />
             </Button>
           </div>
